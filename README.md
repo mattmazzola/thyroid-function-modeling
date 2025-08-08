@@ -1,14 +1,16 @@
-## Thyroid Function Modeling (Streamlit)
+# Thyroid Function Modeling
 
-This Streamlit app calculates SPINA-GD, SPINA-GT, and Jostel's TSH Index (TSHI) from user-entered lab values with selectable units. Constants and molecular weights are adjustable.
+This app calculates SPINA-GD, SPINA-GT, and Jostel's TSH Index (TSHI) from user-entered lab values with selectable units. Constants and molecular weights are adjustable.
 
-### Features
+## Features
+
 - Inputs with unit pickers for Free T3, Free T4, Reverse T3, TSH
 - Adjustable molecular weights (T3, T4) and model constants
 - Outputs: SPINA-GD (nmol/s), SPINA-GT (pmol/s), TSHI
 - Help expanders for each metric and interpretation hints
 
-### Formulas
+## Formulas
+
 - SPINA-GT (using FT4):
   GT = βT × (DT + [TSH])/(αT × [TSH]) × (1 + K41[TBG] + K42[TBPA]) × [FT4]
   (pmol/s when converted)
@@ -22,13 +24,13 @@ This Streamlit app calculates SPINA-GD, SPINA-GT, and Jostel's TSH Index (TSHI) 
 
 References: Dietrich et al., Front Endocrinol (Lausanne). 2016; SPINA Thyr documentation.
 
-### Quick start
+## Quick start
 
 ```bash
-pip install -r requirements.txt
-streamlit run app.py
+uv pip install -r requirements.txt
+uv run streamlit run app.py
 ```
 
-### Notes
-Results are for educational purposes and should not replace clinical judgment.
+## Notes
 
+Results are for educational purposes and should not replace clinical judgment.
